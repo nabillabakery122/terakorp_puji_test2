@@ -24,7 +24,7 @@ class RumahsakitController extends Controller
     public function rules()
     {
         return [
-           'nama' => 'required|unique:rumah_sakits,nama',
+           'nama' => 'required',
            'email' => 'required|email',
            'alamat' => 'required',
            'telepon' => 'required|min:10'
